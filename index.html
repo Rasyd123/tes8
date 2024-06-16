@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024"> <!-- Fixed width for desktop mode -->
+    <title>Diamond Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Diamond Store Logo" class="logo">
+        <h1>Diamond Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Diamond Store</h2>
+        <p>Your one-stop shop for exquisite diamonds.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Diamond Street, Jewel City, JC 45678</p>
+            <p><strong>Phone:</strong> +1 (234) 567-890</p>
+            <p><strong>Email:</strong> contact@diamondstore.com</p>
+        </div>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diamond Store</p>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
